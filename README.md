@@ -25,11 +25,8 @@ in mind.
 You can install `xply` using `pip`:
 
 ```bash
-pip install 'git+https://github.com/tobiasholl/xply.git'
+pip install xply
 ```
-
-Once the API is somewhat stable, there will (probably) also be a PyPI package
-that tracks the release versions.
 
 `xply` requires at least Python 3.7 (for `from __future__ import annotations`).
 

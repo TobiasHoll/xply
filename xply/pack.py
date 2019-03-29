@@ -65,26 +65,20 @@ def unpack_integer(fmt: integer_format, data: bytes, endian: endianness = endian
 @_pack_shorthand(pack_integer, unpack_integer)
 class integer_format(enum.Enum):
     '''Packing formats'''
-    u64      =  0
-    i64      =  1
-    intptr_t =  2
-    size_t   =  3
-    ssize_t  =  4
-    u32      =  5
-    i32      =  6
-    u16      =  7
-    i16      =  8
-    u8       =  9
-    i8       = 10
+    u64 = 0
+    i64 = 1
+    u32 = 2
+    i32 = 3
+    u16 = 4
+    i16 = 5
+    u8  = 6
+    i8  = 7
 
     def to_struct(self):
         '''Convert the packing into the corresponding python struct marker'''
         return {
             integer_format.u64:      "Q",
             integer_format.i64:      "q",
-            integer_format.intptr_t: "P",
-            integer_format.size_t:   "N",
-            integer_format.ssize_t:  "n",
             integer_format.u32:      "I",
             integer_format.i32:      "i",
             integer_format.u16:      "H",

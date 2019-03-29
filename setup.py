@@ -12,10 +12,12 @@ setuptools.setup(
     url          = "https://github.com/tobiasholl/xply",
     packages     = setuptools.find_packages(),
     classifiers = [
+        "Development Status :: 3 - Alpha",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Topic :: Security",
     ],
     long_description = long_description,
     long_description_content_type = "text/markdown",
