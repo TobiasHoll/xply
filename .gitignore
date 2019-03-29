@@ -1,3 +1,8 @@
 # Ignore compiled and cached Python files
 __pycache__/
 *.py[cod]
+
+# Distribution files (from setup.py sdist bdist_wheel)
+/build/
+/dist/
+/xply.egg-info/
