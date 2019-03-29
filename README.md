@@ -32,7 +32,7 @@ pip install xply
 
 ## Contributing
 
-Contributions to plutonium-dbg are always welcome! If you encounter a bug or have a feature request, please [open an issue](https://github.com/tobiasholl/xply/issues/new). Feel free to create a [pull request](https://help.github.com/articles/creating-a-pull-request/) for your improvements.
+Contributions are always welcome! If you encounter a bug or have a feature request, please [open an issue](https://github.com/tobiasholl/xply/issues/new) on GitHub. Feel free to create a [pull request](https://help.github.com/articles/creating-a-pull-request/) for your improvements.
 
 ## License
 
