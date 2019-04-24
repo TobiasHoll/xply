@@ -7,9 +7,16 @@ def chunk(iterable: typing.Iterable[typing.Any], chunk_size: int) -> typing.Iter
     '''Splits the given iterable into chunks of a fixed size'''
     iterator = iter(iterable)
     while True:
-        chunk = list(itertools.islice(iterator, chunk_size))
+        chunk_iterator = itertools.islice(iterator, chunk_size)
+        chunk = list(chunk_iterator)
         if not chunk:
             return
+        # Bring common types back to their original
+        # A string should be chunked into a list of strings, not a list of lists of characters
+        if isinstance(iterable, str):
+            chunk = ''.join(chunk)
+        elif isinstance(iterable, bytes):
+            chunk = bytes(chunk)
         yield chunk
 
 # Hex dumps
